@@ -1,0 +1,34 @@
+<!-- <mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened class="drawer">Drawer content</mat-drawer>
+    <mat-drawer-content class="drawer_content">Main content</mat-drawer-content>
+  </mat-drawer-container> -->
+  <div style="width:100%;height: 200%;" class="cl_page">
+    <mat-toolbar class="toolbar">
+        <span class="title">Users List</span>
+      </mat-toolbar>
+     
+      <mat-selection-list #shoes [multiple]="false">
+        <mat-list-option *ngFor="let detail of arrayfordetails" class="matcard1">
+          <div style="margin-top: 8px;">
+
+               <!-- margin-left: 55%; -->
+      <div > 
+        <p style="margin-left: 15%;">IdentificationNo:</p>
+
+        <p style="margin-top: -32px;margin-left: 54%;"> {{detail.id}}</p> 
+      </div> 
+      </div>
+            <div style="margin-top: -21%;">
+          <p  class="cl_user" style="margin-left: 23%;margin-top: 22%;font-size: 18px;">UserName:</p>
+          <p class="cl_name" style="margin-left: 55%;margin-top: -31px;font-size: 18px;">{{detail.name}}</p>
+        </div>
+     
+       
+           <button mat-flat-button style="margin-left: 50%;margin-top: 31px;" class="cl_mat-button1" (click)="delete(detail)">Delete</button>
+           <button mat-flat-button  class="cl_mat-button3"  style="margin-top: -12%;margin-left: 77px;" (click)="update(detail)">Update</button>
+           <button mat-flat-button  class="cl_mat-button2" style="margin-left: 262px;margin-top: -39px;" (click)="openDialog(detail)">View</button>
+         
+          </mat-list-option>
+      </mat-selection-list>
+  </div>
+ 

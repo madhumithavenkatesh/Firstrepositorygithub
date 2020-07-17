@@ -1,0 +1,49 @@
+<p mat-dialog-title class="cl_title">Update your  details</p>
+<br>
+<div  mat-dialog-content>
+    <form class="example-form" [formGroup]="dialogformgroup" >
+
+        <mat-form-field class="example-full-width">
+            <mat-label>IdentificationNo</mat-label>
+            <input matInput placeholder="IdentificationNo" [(ngModel)]="searchterm2" [ngModelOptions]="{standalone: true}">
+        {{data.identifaction}}
+          </mat-form-field>
+
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Name" formControlName="Name">
+      
+        </mat-form-field>
+        <mat-error *ngIf="dialogformgroup.get('Name').touched  && dialogformgroup.get('Name').hasError('required') &&  dialogformgroup.get('Name').hasError('minLength')" >
+            Invalid
+         </mat-error><br><br>
+        <br>
+        <mat-form-field class="example-full-width1"  >
+            <mat-label >phonenumber</mat-label>
+            <input matInput  formControlName="phonenumber" type="number" >
+        </mat-form-field>
+        <mat-error type="number" *ngIf="dialogformgroup.get('phonenumber').touched  && dialogformgroup.get('phonenumber').hasError('required') " >
+            Invalid
+         </mat-error><br>
+        <br>
+        <mat-form-field class="example-full-width1" >
+
+            <mat-label  >Email</mat-label>
+            <input matInput placeholder="email"  formControlName="email"  >
+        </mat-form-field>
+        <mat-error type="email" *ngIf="dialogformgroup.get('email').touched  &&  dialogformgroup.get('email').hasError('minLength')  " >
+        </mat-error>
+        <mat-form-field class="example-full-width1" >
+
+            <mat-label  >Password</mat-label>
+            <input matInput placeholder="password"  formControlName="password">
+        </mat-form-field>
+        <mat-error type="password" *ngIf="dialogformgroup.get('password').touched  && dialogformgroup.get('password').hasError('required') " >
+        </mat-error>
+        <br>
+        <button mat-raised-button (click)="update()" >Update</button>
+        <button mat-raised-button (click)="Cancel()" >Cancel</button>
+      </form>
+</div>
+

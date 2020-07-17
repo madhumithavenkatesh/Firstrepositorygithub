@@ -1,0 +1,229 @@
+<mat-drawer-container class="sidenav ">
+   
+    <mat-drawer-content class="hoversidenav">
+
+     <img src="assets/goodsimages/menu.png" class="cl_menuimg">
+        <br>
+        <br> 
+     
+        <div class="hoversidenav" >
+            <img src="assets/goodsimages/details.png" class="cl_detailsimg ">
+            <p class="cl_detsilstxt">My Details</p>
+        </div>
+        <br>
+        <div>
+            <img src="assets/goodsimages/order fulfilment.png" class="cl_orderimg">
+            <p class="cl_ordertxt">Order Fulfilment</p>
+        </div>
+        <br>
+        <div>
+            <img src="assets/goodsimages/lookup.png" class="cl_detailsimg">
+            <p class="cl_ordertxt1">PO Lookup</p>
+        </div>
+        <br>
+        <div>
+            <img src="assets/goodsimages/ASN2.png" class="cl_orderimg">
+            <p class="cl_ASNtxt">ASN</p>
+        </div>
+        <br>
+        <div>
+            <img src="assets/goodsimages/bill_2020-06-13/bill.png" class="cl_orderimg">
+            <p class="cl_invoicetxt">Invoice</p>
+  
+        </div>
+        <br>
+        <div>
+            <img src="assets/goodsimages/payment-method_2020-06-13/payment-method.png" class="cl_orderimg">
+            <p class="cl_invoicetxt">Payments</p>
+        </div>
+        <br>
+        <div>
+            <img src="assets/goodsimages/Stock_2020-06-13/Stock.png" class="cl_orderimg">
+            <p class="cl_invoicetxt">Stocks</p>
+        </div> 
+       <br>
+       <div>
+        <img src="assets/goodsimages/quality.png" class="cl_orderimg">
+        <p class="cl_invoicetxt">Quality</p>
+    </div>
+    <br>
+    <div>
+        <img src="assets/goodsimages/performance.png" class="cl_orderimg">
+        <p class="cl_ordertxt1">performance</p>
+    </div>
+    <br>
+    </mat-drawer-content>
+  </mat-drawer-container>
+  
+  <mat-toolbar class="toolbar">  
+    <p class="cl_supplier">GR Receipts</p>
+    <img src="assets/goodsimages/logo 2_2020-06-13/logo 2.png" class="cl_logoimg">
+</mat-toolbar>
+<div class="page" fxLayout="column" fxLayout.xs="column">
+    <div fxFlex="100" class="first" >
+        <div fxFlex="35.33%"  class="firstinner" >
+            <div fxFlex="90"  class="grdcount" >
+   <p class="grnhead">GRN Count</p>
+   <mat-divider style="width:25%" class="cl_matdividerflex"></mat-divider>
+   <div style="width:387px" >
+
+    <canvas id="doughnut1"  class="doughnout">
+    
+    </canvas>
+    <p class="chartnum">957</p>
+    <p class="txtchart">GRN Count</p>
+  </div>
+   <!-- <img src="assets/goodsimages/Group 1496.png" class="groupimg"> -->
+            </div> 
+        </div> 
+        <div  fxFlex="37%"  class="second" >
+            <div fxFlex="94"  class="grdcount1" >
+                <p class="grnhead">OnTime / Delayed</p>
+   <mat-divider style="width:33%" class="cl_matdividerflex1"></mat-divider>
+   <p class="blue"></p>
+   <p class="actual">Actual</p>
+   <p class="planned">Planned</p>
+   <p class="orange"></p>
+   <!-- <img src="assets/goodsimages/Chart.png" class="chartimg"> -->
+   <div  class="chartouter" >
+    <div   class="chartinner" >
+   <div class="barchart" style="height: 160px;" >
+    <canvas  style="height: 10;"
+        baseChart
+        [chartType]="'bar'"
+        [datasets]="chartData"
+        [labels]="labels"
+        [options]="chartOptions"
+        [legend]="false"
+        [colors]="colors"
+        [width]="width"
+        [height]="height"
+        
+       
+      >
+    </canvas>
+   </div></div>
+  </div>
+            </div> 
+   </div>
+
+     <div  fxFlex="21" class="third" >
+        <input type="text"  class="search textbox3" placeholder="Material" >
+        <button mat-raised-button class="matbuttonraised2" style="color:white">Search</button>
+        </div>
+        </div>
+      
+</div>
+<div class="flexout1" > 
+  <div fxFlex="100"  class="flexout" >
+ <input type="text" class="textBox1 textbox2 foucusinput"  placeholder="  Search"/>
+<select matNativeControl required class="select_color" >
+    <option value="All">All</option>
+    <option value="none">none</option>
+</select> 
+
+
+
+
+ <div  class="excel1" > 
+ <div fxFlex="3px"  class="excelinner1" >
+   <img src="assets/goodsimages/excel.png" class="excelinner1"> 
+</div>  
+ </div> 
+
+ <div  class="excel2" > 
+  <div fxFlex="3px"  class="excelinner2" >
+  <img src="assets/goodsimages/expand.png" class="excelinner2"> 
+ </div> 
+  </div> 
+</div></div>
+ <table mat-table [dataSource]="dataSource1" class="table1">
+     
+  <!-- <ng-container matColumnDef="image" >
+    <th mat-header-cell *matHeaderCellDef class="table2header cl_border headercell headercellcenter ">image  </th>
+    <td mat-cell *matCellDef="let element" class="cl_rowcell rowheight" > {{element.image}} </td>
+  </ng-container> -->
+
+
+    <ng-container matColumnDef="material" >
+      <th mat-header-cell *matHeaderCellDef class="table1header cl_border headercell headercellcenter "> Material </th>
+      <td mat-cell *matCellDef="let element" class="cl_rowcell rowheight" > {{element.material}} </td>
+    </ng-container>
+   
+    <!-- Name Column -->
+     <ng-container matColumnDef="materialdesc">
+      <th mat-header-cell *matHeaderCellDef class="table1header2 cl_border cl_headercell headercellcenter "> Material Des</th>
+      <td mat-cell *matCellDef="let element" class="cl_rowcell rowheight"> {{element.materialdesc}} </td>
+    </ng-container> 
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="order">
+      <th mat-header-cell *matHeaderCellDef class="table1header1  cl_border cl_headercell headercellcenter " > Order Qty  </th>
+      <td mat-cell *matCellDef="let element" class="cl_rowcell1 "> {{element.order}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="recived">
+        <th mat-header-cell *matHeaderCellDef class="table1header3  cl_border cl_headercell headercellcenter " > Recived Qty </th>
+        <td mat-cell *matCellDef="let element" class="cl_rowcell2 "> {{element.recived}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="rejected">
+        <th mat-header-cell *matHeaderCellDef class="table1header4  cl_border cl_headercell headercellcenter " > Rejected PPM </th>
+        <td mat-cell *matCellDef="let element" class="cl_rowcell "> {{element.rejected}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="rework">
+        <th mat-header-cell *matHeaderCellDef class="table1header5  cl_border cl_headercell headercellcenter " > Rework Qty</th>
+        <td mat-cell *matCellDef="let element" class="cl_rowcell "> {{element.rework}} </td>
+      </ng-container>
+   
+    <tr mat-header-row *matHeaderRowDef="displayedColumns1" class="row2 "> </tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns1;" class="rowcell " style="height: 57px"></tr>
+  </table> 
+  
+  
+<p class="orangebox1"> </p>
+<p class="blue1"> </p>
+<p class="orangebox2"> </p>
+<p class="blue2"> </p>
+<p class="orangebox3"> </p>
+<p class="blue3"> </p>
+
+ <!-- <igx-doughnut-chart width="700px" height="400px" class="innerring">
+        <igx-ring-series name="Months"
+            [dataSource]="Months"
+            labelsPosition="Center"
+            labelMemberPath="Label"
+            valueMemberPath="Value"
+           radiusFactor="0.9" 
+    
+            startAngle="0">
+
+        </igx-ring-series>
+        <igx-ring-series name="Seasons" 
+            [dataSource]="Flower"
+          
+            labelsPosition="none"
+            labelMemberPath="Label"
+            valueMemberPath="Value"
+         
+            radiusFactor="0.3"
+            startAngle="0">
+        </igx-ring-series>
+ </igx-doughnut-chart>
+ <div>
+  <canvas
+      baseChart
+      [chartType]="'bar'"
+      [datasets]="chartData"
+      [labels]="labels"
+      [options]="chartOptions"
+      [legend]="false"
+      [colors]="colors"
+  
+    >
+  </canvas>
+</div>
+<div id="chart-container">FusionCharts will render here</div>
+
+  -->

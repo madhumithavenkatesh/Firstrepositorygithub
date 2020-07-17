@@ -1,0 +1,168 @@
+.cl_mattoolbar1{
+    height: 60px;
+    background-image: linear-gradient(135deg, #08AEEA 0%, #2AF598 100%);
+}
+.cl_exalcahead{
+    font-size: 33px;
+    font-weight: 800;
+    margin-left: 47%;
+    font-family: none;
+}
+.home{
+    background-repeat: no-repeat;
+    display: inline-block;
+    fill: currentColor;
+    height: 28px;
+    width: 24px;
+    margin-left: 41%;
+    font-size: 33px;
+}
+.menu.mat-icon-button i, .mat-icon-button .mat-icon {
+    line-height: 17px;
+    height: 24px;
+    width: 24px;
+    font-size: 33px;
+}
+.example-container {
+  width: 100%;
+  height: 112%;
+  margin-top: 23px;
+  }
+  .cl_th2{
+    margin-left: 28px;
+    margin-top: 24px;
+    font-weight: 800;
+    font-size: 18px;
+  }
+  .main-content{
+    background-color: white;
+  }
+  .drawer{
+    width: 17%;
+  }
+  .cl_card1{
+    width: 80%;
+    margin-left: 99px;
+    height: 232px;
+    margin-top: 29px;
+  }
+  .cl_card2{
+    width: 80%;
+    margin-left: 99px;
+    height: 214px;
+    margin-top: -4px;
+  }
+
+  .mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: 0px 8px 24px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+/* .mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 12px;
+} */
+.input1{
+    margin-top: 12px;
+}
+.person1{
+    font-size: 13px;
+    font-weight: 500;
+}
+cl_div1{
+
+}
+.cl_formfeild1{
+  margin-left: 11%;
+  margin-top: 20px;
+}
+.div_outter1{
+
+}
+.div_outter{
+  /* background-color: blue; */
+    height: 100%;
+}
+.cl_item{
+  margin-top: 78px;
+    margin-left: 111px;
+    font-size: 21px;
+    font-weight: 700;
+}
+.cl_matdividercost{
+  margin-left: 130px;
+  width: 84px;
+  margin-top: -3px;
+  height: 13px;
+  border-width: 3px;
+  border-color: #2AF598;
+  
+}
+.cl_itemhover div:hover {
+  border-color: #f4cda4;
+  border-bottom-style: solid;
+  /* width: 53px; */
+  background-color: #484141;
+}
+.select_color{
+
+}
+.matbuttonraised1{
+  margin-left: 36%;
+  margin-top: 40px;
+  
+  width: 11%;
+  height: 5%;
+  background-image: linear-gradient(135deg, #08AEEA 0%, #2AF598 100%);
+}
+.matbuttonraised2{
+  margin-left: 45px;
+  width: 11%;
+  height: 5%;
+  background-color: #e8e1e1;
+}
+.search{
+  margin-left: 15px;
+  margin-top: 11px;
+  border-radius: 7px;
+  height: 29px;
+  width: 82%;
+}
+.cl_sidecard1{
+  margin-top: 11%;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  height: 89px;
+  width: 190px;
+  border-radius: 9px;
+}
+.filterdiv{
+ 
+  border-color: #353131;
+  border-style: solid;
+  border-width: 2px;
+  height: 96px;
+  width: 219px;
+  border-radius: 7px;
+  margin-top: 23px;
+  margin-left: 12px;
+}
+.cl_matdividercost1{
+  background-color: #2AF598;
+    width: 6px;
+    height: 94px;
+}
+.cl_matdividercost2{
+  background-color: #08AEEA;
+  width: 6px;
+  height: 93px;
+}
+
+.labno{
+  margin-left: 36px;
+  margin-top: -88px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.labdate{
+  margin-left: 61px;
+  font-weight: 500;
+}

@@ -1,0 +1,40 @@
+<div class="cl_matcard_first">
+<mat-card  class="cl_matcard">
+ <mat-card-title class="cl_cartitle"> LOGIN  </mat-card-title>
+
+    <div>
+        <form  name="Form" [formGroup]="loginformgroup" >
+            <mat-form-field class="example-full-width">
+            <mat-label>Identification Number:</mat-label>
+                <input matInput placeholder="Identification Number"  type="number"  formControlName=Id class="input1" [(ngModel)]="searchterm2">
+            </mat-form-field>
+        <!-- <mat-error *ngIf="  loginformgroup.get('username').hasError('required') && loginformgroup.get('username').hasError('minLength')" >
+            min length is req
+        </mat-error>             -->
+        <!-- <mat-error *ngIf="loginformgroup.get('username').hasError('required') " >
+          
+          Invalid
+        </mat-error>  -->
+        <mat-error *ngIf="loginformgroup.get('Id').touched  && loginformgroup.get('Id').hasError('required')" >
+            <!-- &&  loginformgroup.get('username').hasError('minLength') -->
+           Invalid
+        </mat-error>
+        <mat-form-field class="example-full-width"> 
+        <mat-label>Password:</mat-label>
+        <input matInput placeholder="password"  required type="text"  formControlName="password" class="input2"  >
+        <!-- <input matInput placeholder ="password" type="password" required  formControlName="password"  > -->
+    </mat-form-field>
+    <mat-error *ngIf="loginformgroup.get('password').touched  && loginformgroup.get('password').hasError('required')" >
+        <!-- &&  loginformgroup.get('password').hasError('minLength') -->
+        Invalid 
+     </mat-error><br><br>
+     <button mat-flat-button style="margin-left: 3%; width: 91%;" class="cl_mat-button1" (click)="loginclicked()">LOGIN</button>
+     <br>
+     <br><br>
+     <mat-label style="margin-left:5px">New User?</mat-label>
+     <button mat-button (click)="signclicked()">Sign Up </button>
+     
+    </form>
+    </div>
+</mat-card>
+</div>

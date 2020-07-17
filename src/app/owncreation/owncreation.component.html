@@ -1,0 +1,134 @@
+<mat-toolbar class="cl_mattoolbar1">
+   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" class="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+   <th class="cl_exalcahead" > Exalca </th>
+   <mat-icon aria-hidden="false" aria-label="Example home icon"   class="home">home</mat-icon>
+   <!-- <mat-icon matBadge="15" matBadgeColor="warn"  class="home" >home</mat-icon> -->
+  </mat-toolbar>
+  <p class="cl_th2">Truck Request Solution</p>
+  <mat-drawer-container class="example-container">
+   <mat-drawer mode="side" opened m class="drawer">
+     <input placeholder="search" class="search">
+     <div class="filterdiv">
+      <!-- <mat-divider  style="height:68px" class="cl_matdividercost1 " [vertical]="true"></mat-divider> -->
+      
+       <p class="cl_matdividercost1"> </p>
+       <p class="labno">Item No :123457098</p>
+       <p class="labdate">Date:12/3/2020</p>
+       
+       </div>
+       <div class="filterdiv">
+        <!-- <mat-divider  style="height:68px" class="cl_matdividercost1 " [vertical]="true"></mat-divider> -->
+        
+         <p class="cl_matdividercost2"></p>
+         <p class="labno">Item No :8453209</p>
+       <p class="labdate">Date:12/3/2020</p>
+         </div>
+   </mat-drawer>
+   <mat-drawer-content class="main-content">
+      <mat-card class="cl_card1">
+        <div class="div_outter" fxLayout="row" fxLayout.xs="row">
+          <div fxFlex="35" class="div_outter1" > 
+         <form>
+         <mat-form-field class="cl_formfeild1" >
+            
+         
+         <input matInput  placeholder ="Contact Person"  required class="input1" >
+     
+       </mat-form-field>
+      </form> 
+      <form>
+        <mat-form-field class="cl_formfeild1" >
+        <input matInput  placeholder ="Mobile Number"  required class="input1" >
+    
+      </mat-form-field>
+     </form> 
+      </div>
+      <div  fxFlex="35" >
+        <form>
+          <mat-form-field class="cl_formfeild1" >
+          <input matInput  placeholder =" Packing Type"  class="input1" >
+      
+        </mat-form-field>
+       </form> 
+      </div>
+      <div fxFlex="30" >
+        <form>
+          <mat-form-field class="cl_formfeild1" >
+          <input matInput  placeholder ="Required Date"  required class="input1" >
+      
+        </mat-form-field>
+       </form> 
+      </div>
+    </div>  
+    </mat-card>
+   
+<div class="cl_itemhover" >
+<p class="cl_item cl_itemhover">Item Details</p>
+<mat-divider  style="height:30px" class="cl_matdividercost "></mat-divider>
+</div>
+
+      <mat-card class="cl_card2">
+       <div class="div_outter" fxLayout="row" fxLayout.xs="row">
+          <div fxFlex="35" class="div_outter1" >
+            <form>
+              <mat-form-field class="cl_formfeild1" >
+              <input matInput  placeholder =" shift"  required class="input1" >
+          
+            </mat-form-field>
+           </form> 
+           
+             <!-- <mat-form-feild class="cl_formfeild1"> -->
+              <!-- <mat-label>Truck</mat-label> -->
+               <!-- <p class="truck">No of Truck</p>
+              <select matNativeControl required class="select_color " >
+                <option value="Registered">Registered</option>
+                <option value="none">none</option>
+                
+              </select> -->
+             <!-- </mat-form-feild> -->
+             <form>
+              <mat-form-field class="cl_formfeild1" >
+              <!-- <input matInput  placeholder ="Mobile Number"  required  > -->
+          
+              <select matNativeControl required class="input1"  placeholder="Truck No">
+                <option value="Registered">1</option>
+                <option value="none">2</option>
+                <option value="none">3</option>
+                </select>
+            </mat-form-field>
+           </form> 
+
+           
+            </div>
+          
+          <div  fxFlex="35" >
+            <form>
+              <mat-form-field class="cl_formfeild1" >
+              <input matInput  placeholder =" Delivery Date"  class="input1" >
+          
+            </mat-form-field>
+            <mat-form-field class="cl_formfeild1" >
+              <input matInput  placeholder =" Delivery Quantity"  class="input1" >
+          
+            </mat-form-field>
+           </form> 
+          </div>
+          <div fxFlex="30" >
+            <form>
+              <mat-form-field class="cl_formfeild1" >
+              <input matInput  placeholder ="Transport"  required class="input1" >
+          
+            </mat-form-field>
+           </form> 
+          </div>
+        </div>
+      </mat-card>
+      <button mat-raised-button class="matbuttonraised1">Aprove</button>
+      <button mat-raised-button class="matbuttonraised2">Cancel</button>
+
+
+   </mat-drawer-content>
+
+ </mat-drawer-container>

@@ -1,0 +1,73 @@
+.mat-drawer-container {
+    background-color: #fafafa;
+    color: rgba(0,0,0,.87);
+    height: 100%;
+    width: 100%;
+}
+.drawer{
+    width: 16%;
+}
+.drawer_content{
+
+}
+.cl_page{
+    background-image: url('../../assets/signupdetail_images/blueabstract1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background-color: aliceblue; */
+    
+
+}
+.toolbar{
+    border-bottom-style: inset;
+    background-color: #383e3e;
+}
+.title{
+    margin-left: 45%;
+    font-size: 27px;
+    font-color: white;
+    color: #dad8d8;
+}
+.matcard1{
+    margin-left: 32%;
+    /* margin-right: -388px; */
+    background-color: #f6eeee;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+.mat-list-base .mat-list-item, .mat-list-base .mat-list-option {
+    display: block;
+    height: 182px;
+    -webkit-tap-highlight-color: transparent;
+    width: 26%;
+    padding: 0;
+    position: relative;
+    background-color: white;
+    border-style: solid;
+    margin-left: 37%;
+}
+.cl_mat-button1{
+    width: 10%;
+    /* background-color: #756a6a; */
+    /* margin-left: 28px;
+    margin-top: 64px; */
+    /* color: #2d2a2a; */
+    border-color: black;
+    border-style: solid;
+}
+.cl_user{
+
+}
+.cl_name{
+
+}
+.cl_mat-button2{
+    width: 10%;
+    border-color: black;
+    border-style: solid;
+}
+.cl_mat-button3{
+    width: 10%;
+    border-color: black;
+    border-style: solid;
+}

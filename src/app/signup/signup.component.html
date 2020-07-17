@@ -1,0 +1,57 @@
+<mat-card  class="cl_matcard"> <br>
+    <form  name="Form" [formGroup]="signupformgroup" >
+<mat-card-title style="margin-left:30%">SIGN UP</mat-card-title><br>
+<!-- <mat-form-field class="example-full-width" > -->
+  
+    <!-- <mat-label>Name:</mat-label> -->
+    <!-- <input matInput placeholder="Id" type="number" required  formControlName="Id"  >
+</mat-form-field>
+    <mat-error *ngIf="signupformgroup.get('Id').touched  && signupformgroup.get('Id').hasError('required') " >
+        Invalid
+     </mat-error> -->
+
+    <mat-form-field class="example-full-width1" >
+        <input matInput placeholder="Full name"  required  formControlName="Name"  >
+    </mat-form-field>
+    <mat-error *ngIf="signupformgroup.get('Name').touched  && signupformgroup.get('Name').hasError('required') &&  signupformgroup.get('Name').hasError('minLength')" >
+           Invalid
+        </mat-error><br><br>
+    
+     <mat-label  required class="select"> Select Mode of Contact </mat-label> <br><br>
+     <mat-radio-group class="radio"  >
+        <mat-radio-button value="1" (change)="radiochecked(1)">phone</mat-radio-button>
+        <mat-radio-button value="2" (change)="radiochecked(2)">Email</mat-radio-button>
+      </mat-radio-group>
+      <!-- <mat-error *ngIf="signupformgroup.get('contact').touched  && signupformgroup.get('phonenumber').hasError('required') " >
+        Invalid
+     </mat-error> -->
+      <br><br>
+      <mat-form-field class="example-full-width" >
+        <input matInput placeholder ="phonenumber" type="number" required  formControlName="phonenumber"  >
+    </mat-form-field>
+    <mat-error type="number" *ngIf="signupformgroup.get('phonenumber').touched  && signupformgroup.get('phonenumber').hasError('required') &&  signupformgroup.get('phonenumber').hasError('minLength')" >
+        Invalid
+     </mat-error><br>
+     <mat-form-field class="example-full-width" >
+     <input matInput placeholder ="email" type="email" required  formControlName="email"  >
+    </mat-form-field>
+    <mat-error type="email" *ngIf="signupformgroup.get('email').touched  &&  signupformgroup.get('phonenumber').hasError('minLength')  " >
+    </mat-error>
+    
+        <mat-form-field class="example-full-width" >
+            <input matInput placeholder ="create password" type="string" required  formControlName="password"  >
+           </mat-form-field>
+           <mat-error type="password" *ngIf="signupformgroup.get('password').touched  && signupformgroup.get('password').hasError('required') " >
+  </mat-error>
+  <mat-error type="password" *ngIf="signupformgroup.get('password').touched  && signupformgroup.get('password').hasError('required') " >
+</mat-error>
+  <br><br>
+
+<!-- 
+  <button mat-flat-button style="margin-left: 10%;" class="cl_mat-button1" (click)="delete()">Delete</button> -->
+
+     
+     <button mat-flat-button style="margin-left: 30%;" class="cl_mat-button1" (click)="signupclicked()">SIGNUP</button>
+    </form>
+
+</mat-card>

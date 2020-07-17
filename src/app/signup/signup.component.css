@@ -1,0 +1,45 @@
+.mat-card {
+  background: #fff;
+  color: rgba(0,0,0,.87);
+  height: 74%;
+  width: 19%;
+  margin-left: 41%;
+  margin-top: 4%;
+}
+.example-full-width {
+  width: 89%;
+  margin-left: 14px;
+  margin-top: 2px;
+  }
+  .example-full-width1 {
+    width: 89%;
+    margin-left: 14px;
+    margin-top: 4px;
+    }
+  .example-radio-group {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+  }
+  .mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: 0px 11px 12px 10px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+  .example-radio-button {
+    margin: 5px;
+  }
+  mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+  }
+  .select{
+    margin-left: 16px;
+  }
+  .radio{
+    margin-left: 18px;
+
+  }
+  .example-container {
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #555;
+  }
